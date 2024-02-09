@@ -33,19 +33,19 @@ FT_PRINTF_OBJS = ${FT_PRINTF_SRC:.c=.o}
 all: $(NAME)
 
 $(NAME): $(OBJS) ${FT_PRINTF_OBJS}
-	$(AR) ${NAME} $^
+	@$(AR) ${NAME} $^
 
 ${OBJS}: ${CFILES}
-	$(CC) $(CFLAGS) -c $^
+	@$(CC) $(CFLAGS) -c $^
 
 ${FT_PRINTF_OBJS}: ${FT_PRINTF_SRC}
-	$(CC) $(CFLAGS) -c $^
+	@$(CC) $(CFLAGS) -c $^
 
 clean:
-	$(RM) ${OBJS} ${FT_PRINTF_OBJS}
+	@$(RM) ${OBJS} ${FT_PRINTF_OBJS}
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
