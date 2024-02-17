@@ -6,7 +6,7 @@
 /*   By: jburlama <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 13:53:27 by jburlama          #+#    #+#             */
-/*   Updated: 2023/10/29 17:35:50 by jburlama         ###   ########.fr       */
+/*   Updated: 2024/02/17 19:32:56 by jburlama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ int	print_format(t_flags *flags, const char *str, int *poss, va_list ap)
 
 void	update_struct(t_flags *flags, const char *str, int *poss)
 {
-	while (str[*poss] == '-' || str[*poss] == '+' 
+	while (str[*poss] == '-' || str[*poss] == '+'
 		|| str[*poss] == ' ' || str[*poss] == '#')
 	{
 		if (str[*poss] == ' ')
