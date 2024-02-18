@@ -6,7 +6,7 @@
 #    By: jburlama <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/11 19:20:36 by jburlama          #+#    #+#              #
-#    Updated: 2024/02/17 19:32:05 by jburlama         ###   ########.fr        #
+#    Updated: 2024/02/18 15:53:53 by jburlama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,16 +23,17 @@ CFILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_str
 		 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 		 ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 		 ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_strcut.c  ft_strlcut.c
-OBJS = ${CFILES:.c=.o} 
-FT_PRINTF = ft_printf/ft_printf.a
 FT_PRINTF_SRC = ft_printf.c print_char.c print_string.c \
 				print_ptr.c print_decimal.c print_unsigned_dec.c\
 				print_decimal2.c print_hexa.c
+GET_NEXT_LINE_SRC = get_next_line.c get_next_line_utils.c
+OBJS = ${CFILES:.c=.o} 
 FT_PRINTF_OBJS = ${FT_PRINTF_SRC:.c=.o} 
+GET_NEXT_LINE_OBJS = ${GET_NEXT_LINE_SRC:.c=.o}
 
 all: $(NAME)
 
-$(NAME): $(OBJS) ${FT_PRINTF_OBJS}
+$(NAME): $(OBJS) ${FT_PRINTF_OBJS} ${GET_NEXT_LINE-OBJS}
 	@$(AR) ${NAME} $^
 
 ${OBJS}: ${CFILES}
@@ -41,8 +42,11 @@ ${OBJS}: ${CFILES}
 ${FT_PRINTF_OBJS}: ${FT_PRINTF_SRC}
 	@$(CC) $(CFLAGS) -c $^
 
+${GET_NEXT_LINE_OBJS}: ${GET_NEXT_LINE_SRC}
+	@$(CC) $(CFLAGS) -c $^
+
 clean:
-	@$(RM) ${OBJS} ${FT_PRINTF_OBJS}
+	@$(RM) ${OBJS} ${FT_PRINTF_OBJS} ${GET_NEXT_LINE_OBJS}
 
 fclean: clean
 	@$(RM) $(NAME)
