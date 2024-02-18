@@ -6,7 +6,7 @@
 /*   By: jburlama <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 14:10:17 by jburlama          #+#    #+#             */
-/*   Updated: 2024/02/17 19:30:33 by jburlama         ###   ########.fr       */
+/*   Updated: 2024/02/18 15:42:29 by jburlama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <stddef.h>
 # include "ft_printf.h"
+# include "get_next_line.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
