@@ -6,7 +6,7 @@
 #    By: jburlama <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/11 19:20:36 by jburlama          #+#    #+#              #
-#    Updated: 2024/02/18 15:53:53 by jburlama         ###   ########.fr        #
+#    Updated: 2024/02/18 16:00:58 by jburlama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ GET_NEXT_LINE_OBJS = ${GET_NEXT_LINE_SRC:.c=.o}
 
 all: $(NAME)
 
-$(NAME): $(OBJS) ${FT_PRINTF_OBJS} ${GET_NEXT_LINE-OBJS}
+$(NAME): $(OBJS) ${FT_PRINTF_OBJS} ${GET_NEXT_LINE_OBJS}
 	@$(AR) ${NAME} $^
 
 ${OBJS}: ${CFILES}
