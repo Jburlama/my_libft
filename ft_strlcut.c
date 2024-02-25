@@ -6,7 +6,7 @@
 /*   By: jburlama <jhonas.burlamaqui@gmail.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/17 04:55:24 by jburlama          #+#    #+#             */
-/*   Updated: 2024/02/17 19:27:33 by jburlama         ###   ########.fr       */
+/*   Updated: 2024/02/20 03:21:19 by jburlama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strlcut(char *str, char c)
 	while (len >= 0 && str[len] != c)
 		len--;
 	if (len < 0)
-		return (NULL);
+		return (ft_strdup(str));
 	len++;
 	new = ft_calloc(sizeof(*new), len + 1);
 	if (new == NULL)
