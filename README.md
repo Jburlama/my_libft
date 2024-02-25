@@ -4,13 +4,13 @@
 
 ### description
 
-  Take a string and return a copy of the string until the first occurrence of 'c', not included
-    returns a copy of the string if c was not found
+  Take a string and return a copy of the string until the first occurrence of 'c', if not included
+  returns a copy of the string if c was not found
 
 ## ft_strlcut
   char  *ft_strlcut(char *str, char c);
   
 ### decription
 
-  Take a string and return a copy of the string until the last occurrence of 'c', not included
-    returns a copy of the string if c was not found
+  Take a string and return a copy of the string until the last occurrence of 'c', if not included
+  returns a copy of the string if c was not found
