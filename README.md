@@ -4,7 +4,8 @@
 
 ### description
 
-  Take a string and return a copy of the string until the first occurrence of 'c', if not included
+  Take a string and return a copy of the string until the first occurrence of 'c', c not included.
+  
   returns a copy of the string if c was not found
 
 ## ft_strlcut
@@ -12,5 +13,6 @@
   
 ### decription
 
-  Take a string and return a copy of the string until the last occurrence of 'c', if not included
+  Take a string and return a copy of the string until the last occurrence of 'c', c not included.
+  
   returns a copy of the string if c was not found
