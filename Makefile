@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jburlama <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: Jburlama <jburlama@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/11 19:20:36 by jburlama          #+#    #+#              #
-#    Updated: 2024/02/18 16:00:58 by jburlama         ###   ########.fr        #
+#    Updated: 2024/03/31 16:33:55 by Jburlama         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ CFILES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_str
 		 ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c \
 		 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 		 ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		 ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_strcut.c  ft_strlcut.c
+		 ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_strcut.c  ft_strlcut.c \
+		 ft_chrcount.c ft_atod.c ft_rng.c
 FT_PRINTF_SRC = ft_printf.c print_char.c print_string.c \
 				print_ptr.c print_decimal.c print_unsigned_dec.c\
 				print_decimal2.c print_hexa.c

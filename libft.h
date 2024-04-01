@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jburlama <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: Jburlama <jburlama@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 14:10:17 by jburlama          #+#    #+#             */
-/*   Updated: 2024/02/18 15:42:29 by jburlama         ###   ########.fr       */
+/*   Updated: 2024/04/01 17:05:44 by Jburlama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <fcntl.h>
 # include "ft_printf.h"
 # include "get_next_line.h"
 
@@ -74,5 +75,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 //added funcs
 char	*ft_strcut(char	*str, char c);
 char	*ft_strlcut(char *str, char c);
+double	ft_atod(char *str);
+int		ft_chrcount(char *str, char c);
+int		ft_rng(void);
 
 #endif
